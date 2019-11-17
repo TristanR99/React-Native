@@ -19,7 +19,7 @@ const ListScreen = () => {
       keyExtractor={(friend) => friend.name}
       data={friends} 
       renderItem={({ item }) => {
-        return <Text>{item.name} - {item.age}</Text>;
+        return <Text style={styles.textStyle}>{item.name} - {item.age}</Text>;
       }}
     />
   );
@@ -27,7 +27,7 @@ const ListScreen = () => {
 
 const styles = StyleSheet.create({
   textStyle: {
-    marginVertical: 50
+    marginVertical: 2
   }
 });
 
