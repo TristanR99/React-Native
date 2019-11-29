@@ -25,13 +25,18 @@ const HomeScreen = ({ navigation }) => {
         title="Go to color demo"
         onPress={() => navigation.navigate("Color")}
       />
+      <Button
+        title="Go to Square demo"
+        onPress={() => navigation.navigate("Square")}
+      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: "center"
   },
   margin: {
     marginVertical: 3
